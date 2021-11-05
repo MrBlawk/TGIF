@@ -17,20 +17,15 @@ function init(){
     sLight.position.set(1,3,3);
     scene.add(sLight);
 
-
     renderer = new THREE.WebGLRenderer({canvasPlanet, antialias: true});
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
     const texture = new THREE.TextureLoader().load('textures/earth.jfif');
 
-
-
-
     planet = new THREE.Mesh(
     new THREE.SphereGeometry(),
     new THREE.MeshPhongMaterial({map: texture})
-
     );
 
     planet.castShadow = true;
@@ -52,8 +47,6 @@ function init(){
         }, 4000);
     }
 
-
-
             
     function render(time){
         let zoom = 0.005;
@@ -63,6 +56,7 @@ function init(){
         planet.rotation.x += 0.0001;
         planet.rotation.y += 0.0005;
         //planet.rotation.z += 0.001;
+
 
         renderer.render(scene,camera);
 
