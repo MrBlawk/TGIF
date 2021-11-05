@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import { lerp } from '/node_modules/three/src/math/MathUtils.js'
 import * as THREE from '/node_modules/three/build/three.module.js';
-=======
-import { lerp } from '../node_modules/three/src/math/MathUtils.js'
-import * as THREE from '../node_modules/three/build/three.module.js';
->>>>>>> main
 
 
 
