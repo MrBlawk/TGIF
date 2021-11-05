@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stijn Timmerman</title>
+</head>
+<body>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="cPlanet.js"></script>
+   
+    <div class="banner">
+        <video autoplay muted loop>
+            <source src="./video/bg.mp4" type="video/mp4">
+        </video>
+        <h2>Stijn</h2>
+    </div>
+
+
+
+
+    <canvas id="cMain"></canvas>
+    <canvas id="cPlanet"></canvas>
+
+
+
+
+</body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+    *{
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: black;
+        
+    }
+
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        display: block;
+    }
+
+    .banner{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: table;
+        align-items: center;
+    }
+
+    .banner video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .banner h2{
+        position: static;
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+        background: black;
+        text-transform: uppercase;
+        
+        font-size: 20vw;
+        text-align: center;
+        color: white;
+        line-height: 100vh;
+        mix-blend-mode: multiply;
+        
+
+    }
+
+    .lastname{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: table;
+    }
+
+    .lastname video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .lastname h2{
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        text-transform: uppercase;
+        font-size: 15vw;
+        text-align: center;
+        color: white;
+        mix-blend-mode: multiply;
+    }
+
+    #cMain{
+        background: black;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #cPlanet{
+        background: black;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+</style>
